@@ -1,0 +1,17 @@
+127.0.0.1 - - [25/Feb/2022:14:27:24 +0900] "POST /wp-cron.php?doing_wp_cron=1645766844.0605640411376953125000 HTTP/1.0" 200 -
+127.0.0.1 - - [25/Feb/2022:14:27:24 +0900] "GET / HTTP/1.0" 200 54765
+127.0.0.1 - - [25/Feb/2022:14:27:50 +0900] "GET /wp-admin/ HTTP/1.0" 302 -
+127.0.0.1 - - [25/Feb/2022:14:27:50 +0900] "GET /wp-login.php?redirect_to=http%3A%2F%2Fminamidentalclinic.local%2Fwp-admin%2F&reauth=1 HTTP/1.0" 200 5952
+127.0.0.1 - - [25/Feb/2022:14:27:52 +0900] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 48
+127.0.0.1 - - [25/Feb/2022:14:27:52 +0900] "GET /wp-login.php?interim-login=1&wp_lang=en_US HTTP/1.0" 200 6222
+127.0.0.1 - - [25/Feb/2022:14:28:02 +0900] "POST /wp-login.php HTTP/1.0" 200 6329
+127.0.0.1 - - [25/Feb/2022:14:28:07 +0900] "POST /wp-login.php HTTP/1.0" 302 -
+127.0.0.1 - - [25/Feb/2022:14:28:08 +0900] "GET /wp-admin/ HTTP/1.0" 200 67859
+127.0.0.1 - - [25/Feb/2022:14:28:10 +0900] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 92
+127.0.0.1 - - [25/Feb/2022:14:28:10 +0900] "POST /wp-cron.php?doing_wp_cron=1645766890.1045279502868652343750 HTTP/1.0" 200 -
+127.0.0.1 - - [25/Feb/2022:14:28:10 +0900] "GET /wp-admin/admin-ajax.php?action=wp-compression-test&test=1&_ajax_nonce=b3a804047e&1645766890027 HTTP/1.0" 200 1114
+127.0.0.1 - - [25/Feb/2022:14:28:10 +0900] "GET /wp-admin/admin-ajax.php?action=wp-compression-test&test=2&_ajax_nonce=b3a804047e&1645766890887 HTTP/1.0" 200 572
+127.0.0.1 - - [25/Feb/2022:14:28:11 +0900] "GET /wp-admin/admin-ajax.php?action=wp-compression-test&test=yes&_ajax_nonce=b3a804047e&1645766891025 HTTP/1.0" 200 1
+127.0.0.1 - - [25/Feb/2022:14:28:10 +0900] "GET /wp-admin/admin-ajax.php?action=dashboard-widgets&widget=dashboard_primary&pagenow=dashboard HTTP/1.0" 200 947
+127.0.0.1 - - [25/Feb/2022:14:29:10 +0900] "POST /wp-cron.php?doing_wp_cron=1645766950.7548499107360839843750 HTTP/1.0" 200 -
+127.0.0.1 - - [25/Feb/2022:14:29:10 +0900] "POST /wp-admin/admin-ajax.php HTTP/1.0" 200 47
