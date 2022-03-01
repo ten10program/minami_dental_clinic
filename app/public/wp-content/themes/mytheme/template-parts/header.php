@@ -7,12 +7,12 @@
       <span></span>
     </a>
     <ul class="header__nav">
-      <li><a href="" class="is-active">ホーム</a></li>
-      <li><a href="">当院について</a></li>
-      <li><a href="">診療案内</a></li>
-      <li><a href="">スタッフ紹介</a></li>
-      <li><a href="">スタッフブログ</a></li>
-      <li><a href="">お問い合わせ</a></li>
+      <li><a href="" class="is-active header__home">ホーム</a></li>
+      <li><a href="" class="header__about">当院について</a></li>
+      <li><a href="" class="header__information">診療案内</a></li>
+      <li><a href="" class="header__staff">スタッフ紹介</a></li>
+      <li><a href="" class="header__blog">スタッフブログ</a></li>
+      <li><a href="" class="header__contact">お問い合わせ</a></li>
     </ul>
     <div class="header__meta">
       <div class="header__address">〒166-0001 東京都杉並区阿佐谷北7-3-1</div>

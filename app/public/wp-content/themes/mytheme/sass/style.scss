@@ -80,10 +80,10 @@ a {
 //header
 
 .header {
-  // background: $color-white;
-  background: $color-sub2;
+  background: $color-white;
   height: 100px;
   margin: 0 auto;
+  box-shadow: 0 3px 6px #00000029;
   
 }
 
@@ -110,6 +110,7 @@ a {
 .header__nav {
   display: flex;
   align-items: center;
+  margin-top: 30px;
   li {
     &:not(:first-child){
       margin-left: 24px;
@@ -135,6 +136,79 @@ a {
 
       }
     }
+  }
+}
+.header__home{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    left: 5px;
+     background: url(../img/top/icon-01.png) center center/contain;
+  }
+
+}
+.header__about{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    left: 20px;
+     background: url(../img/top/icon-02.png) center center/contain;
+  }
+}
+.header__information{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    left: 10px;
+     background: url(../img/top/icon-03.png) center center/contain;
+  }
+}
+.header__staff{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    left: 20px;
+     background: url(../img/top/icon-04.png) center center/contain;
+  }
+}
+.header__blog{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    left: 30px;
+     background: url(../img/top/icon-05.png) center center/contain;
+  }
+}
+.header__contact{
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -30px;
+    left: 20px;
+     background: url(../img/top/icon-07.png) center center/contain;
   }
 }
 .header__meta {
