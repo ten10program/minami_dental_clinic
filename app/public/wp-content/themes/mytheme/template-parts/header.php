@@ -1,49 +1,22 @@
-<header id="header">
-    <a class="header_logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/top/logo.png" alt="本サイトのロゴ"></a>
-    <a href="" class="header_bars sp">
+<header class="header">
+  <div class="header__inner">
+    <div class="header__logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/top/logo.png" alt="本サイトのロゴ"></a></div>
+    <a href="" class="header__bars is-sp">
       <span></span>
       <span></span>
       <span></span>
     </a>
-    <ul class="header_nav">
-      <li>
-        <a href="">
-          <div>ホーム</div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div>当院について</div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div>診療案内</div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div>スタッフ紹介</div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div>スタッフブログ</div>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <div>お問い合わせ</div>
-        </a>
-      </li>
+    <ul class="header__nav">
+      <li><a href="" class="is-active">ホーム</a></li>
+      <li><a href="">当院について</a></li>
+      <li><a href="">診療案内</a></li>
+      <li><a href="">スタッフ紹介</a></li>
+      <li><a href="">スタッフブログ</a></li>
+      <li><a href="">お問い合わせ</a></li>
     </ul>
-    <div class="header_meta">
-      <div class="header_meta_address"></div>
-      <a href="tel:0312345678" class="header_meta_tel">03-1234-5678</a>
+    <div class="header__meta">
+      <div class="header__address">〒166-0001 東京都杉並区阿佐谷北7-3-1</div>
+      <a href="tel:0312345678" class="header__tel">03-1234-5678</a>
     </div>
-    
-
-    
-
-    
+  </div>
 </header>

@@ -1,22 +1,22 @@
-$color-main: #1391E6;
+$color-main: #1391e6;
 $color-text: #393939;
-$color-accent: #EE5A6D;
-$color-sub1: #0060A0;
-$color-sub2: #DFF1FD;
-$color-white: #FFFFFF;
+$color-accent: #ee5a6d;
+$color-sub1: #0060a0;
+$color-sub2: #dff1fd;
+$color-white: #ffffff;
 
 //google font
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap");
 
-$layout-width-inner: 1200px;
+$layout-width-inner: 1000px;
 //breakpoint
 $breakpoints: (
-  'sp': "(max-width: 767px)", 
-  'tab': "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})", 
-  'pc': "(min-width: #{$layout-width-inner})"
+  "sp": "(max-width: 767px)",
+  "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "(min-width: #{$layout-width-inner})",
 ) !default;
 //media query
-@mixin mq($breakpoint: sp){
+@mixin mq($breakpoint: sp) {
   @media #{map-get($breakpoints, $breakpoint)} {
     @content;
   }
@@ -30,14 +30,132 @@ $breakpoints: (
 }
 
 html,
-body{
+body {
   padding: 0;
   margin: 0;
 }
-body{
-  
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   background: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+//common
+.inner {
+  width: $layout-width-inner;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.is-pc {
+}
+.is-sp {
+}
+
+//header
+
+.header {
+  // background: $color-white;
+  background: $color-sub2;
+  height: 100px;
+  margin: 0 auto;
+  
+}
+
+.header__inner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.header__logo {
+  width: 270px;
+
+  img {
+    display: block;
+  }
+}
+.header__bars {
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  li {
+    &:not(:first-child){
+      margin-left: 24px;
+    }
+    a {
+      color: $color-text;
+      text-decoration: none;
+      position: relative;
+      font-size: 11px;
+
+      &.is-active{
+        color: $color-main;
+        &::after{
+          content:"";
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: $color-main;
+
+        }
+
+      }
+    }
+  }
+}
+.header__meta {
+}
+.header__address {
+  font-size: 12px;
+  color: $color-text;
+}
+.header__tel {
+  font-size: 32px;
+  color: $color-main;
+  text-decoration: none;
+  position: relative;
+
+  &::before{
+   content:"";
+   position: absolute;
+   width: 28px;
+   height: 28px;
+   top: 10px;
+   left: -32px;
+    background: url(../img/top/icon_tel.png) center center/contain;
+  }
 }
