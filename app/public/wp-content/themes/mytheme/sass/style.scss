@@ -70,7 +70,7 @@ a {
   color: inherit;
 }
 
-button{
+button {
   background-color: transparent;
   border: none;
   // cursor: pointer;
@@ -95,6 +95,11 @@ button{
   .is-sp {
     display: none;
   }
+}
+.button {
+  width: 220px;
+  height: 56px;
+  border-radius: 30px;
 }
 
 //header
@@ -262,6 +267,12 @@ button{
     background: url(../img/top/icon_tel.png) center center/contain;
   }
 }
+.header__mb {
+  height: 100px;
+  @include mq("sp") {
+    height: 60px;
+  }
+}
 
 /*==============================================
 hamburger menu
@@ -297,9 +308,7 @@ hamburger menu
       border-radius: 3px;
       background-color: $color-main;
       position: absolute;
-    transition: all 0.3s;
-
-      
+      transition: all 0.3s;
     }
     span:before {
       bottom: 8px;
@@ -321,7 +330,6 @@ hamburger menu
     bottom: 0;
     transform: rotate(45deg);
     background-color: $color-white;
-
   }
   #hamburger-menu__btn:checked ~ .hamburger-menu__btn span::after {
     top: 0;
@@ -335,24 +343,19 @@ hamburger menu
 
   .hamburger-menu__title {
     padding: 16px 20px;
-    img{
+    img {
       width: 270px;
     }
-
   }
   .hamburger-menu__content ul {
     padding: 54px 30px 0;
-
-    
   }
   .hamburger-menu__content ul li {
-    &:first-child{
+    &:first-child {
       border-top: dotted 2px #ffffff;
     }
     border-bottom: dotted 2px #ffffff;
- 
-      
-    }
+  }
 
   .hamburger-menu__content ul li a {
     display: block;
@@ -430,16 +433,15 @@ hamburger menu
       }
     }
   }
-  
 }
 
 /*===========================================================
 # web-reserve__button
 ===========================================================*/
-.web-reserve{
+.web-reserve {
   position: relative;
 }
-.web-reserve__button{
+.web-reserve__button {
   position: fixed;
   top: 176px;
   right: 0;
@@ -447,8 +449,8 @@ hamburger menu
   background: $color-main;
   width: 92px;
   height: 120px;
- 
-  color:$color-white;
+
+  color: $color-white;
   font-weight: bold;
   padding: 30px 17px 0;
   border-radius: 20px 0 0 20px;
@@ -462,5 +464,196 @@ hamburger menu
     left: 21px;
     background: url(../img/menu-icon/icon-pc.png) center center/contain;
   }
+}
+/*===========================================================
+# footer
+===========================================================*/
+.footer {
+  background-color: $color-sub2;
+  overflow: hidden;
+}
+.footer__border-top {
+  width: 100vw;
+  height: 30px;
+  background: url(../img/top/wave.png) center center/cover;
+}
+.footer__inner {
+}
+.footer__main {
+  margin-top: 56px;
+  padding: 40px 49px;
+  width: 100%;
+  background: $color-white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__main--left {
+}
+.footer__logo {
+  width: 403px;
+  img {
+    display: block;
+  }
+}
+.footer__address {
+  font-size: 12px;
+  color: $color-text;
+  text-align: center;
+}
+.footer__tel {
+  font-size: 32px;
+  color: $color-main;
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 
+  &::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 12px;
+    left: 90px;
+    background: url(../img/menu-icon/icon_tel.png) center center/contain;
+  }
+}
+.footer__time {
+  text-align: center;
+  color: $color-main;
+  font-size: 12px;
+  margin: 0 auto 20px;
+}
+.footer__buttons {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.button__reservation {
+  color: $color-white;
+  background: $color-main;
+}
+.button__contact {
+  color: $color-main;
+  background: $color-white;
+  border: 1px solid $color-main;
+}
+.footer__schedule {
+  height: 166px;
+  width: 477px;
+  background: url(../img/top/medicalTimeSheet.png) center center/auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.footer__main--right {
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__col {
+  display: block;
+}
+.footer__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  a{
+    text-decoration: none;
+  }
+
+}
+.footer__menu {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+  margin-left: 1em;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    top: 6px;
+    left: -12px;
+    background: url(../img/menu-icon/icon-arrow-blue.png) center center/cover;
+  }
+
+}
+.footer__border-bottom {
+  width: 100vw;
+  height: 42px;
+  background: $color-main;
+}
+.footer__copyright {
+  color: $color-white;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: bottom;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 6px;
+}
+
+.footer__top {
+}
+.footer__about {
+}
+.footer__introduction {
+}
+.footer__specialty {
+  width: 250px;
+}
+.footer__contact {
+}
+
+.footer__policy {
+}
+.footer__appearance {
+}
+.footer__director {
+}
+.footer__staff {
+}
+.footer__blog {
+}
+.footer__general {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__orthodontics {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__pediatric {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__whitening {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__preventive {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__surgery {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__denture {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__laser {
+  display: inline-block;
+  min-width: 84px;
+}
+.footer__form {
+}
+.footer__reservation {
 }
