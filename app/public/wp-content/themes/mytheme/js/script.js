@@ -26,3 +26,13 @@ const swiper = new Swiper('.swiper', {
   effect: 'fade' ,
 });
 
+// ===============================================
+// to-top
+// ===============================================
+jQuery(window).on('scroll', function(){
+  if(100 < jQuery(this).scrollTop()) {
+    jQuery('.to-top').addClass('is-show');
+  } else{
+    jQuery('.to-top').removeClass('is-show');
+  }
+})

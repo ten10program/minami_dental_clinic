@@ -744,3 +744,45 @@ hamburger menu
   right: 100px;
   z-index: 1;
 }
+
+/*===========================================================
+# to-top
+===========================================================*/
+.to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+  width: 40px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 767px) {
+  .to-top {
+    right: 12px;
+    bottom: 12px;
+    width: 40px;
+  }
+}
+
+.to-top.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.to-top a {
+  text-decoration: none;
+}
+
+.to-top a img {
+  width: 60px;
+}
+
+@media (max-width: 767px) {
+  .to-top a img {
+    width: 40px;
+  }
+}

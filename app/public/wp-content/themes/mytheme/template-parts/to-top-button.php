@@ -1,0 +1,1 @@
+<div class="to-top"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/menu-icon/totop.png" alt="トップへ戻る"></a></div>
