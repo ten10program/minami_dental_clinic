@@ -175,7 +175,8 @@ button {
   height: 24px;
   top: -30px;
   left: 5px;
-  background: url(../img/top/icon-01.png) center center/contain;
+  background: url(../img/menu-icon/icon-01-b.png) center center/contain;
+  border-color: #0060a0;
 }
 
 .header__about {
@@ -189,7 +190,7 @@ button {
   height: 24px;
   top: -30px;
   left: 20px;
-  background: url(../img/top/icon-02.png) center center/contain;
+  background: url(../img/menu-icon/icon-02.png) center center/contain;
 }
 
 .header__information {
@@ -203,7 +204,7 @@ button {
   height: 24px;
   top: -30px;
   left: 10px;
-  background: url(../img/top/icon-03.png) center center/contain;
+  background: url(../img/menu-icon/icon-03.png) center center/contain;
 }
 
 .header__staff {
@@ -217,7 +218,7 @@ button {
   height: 24px;
   top: -30px;
   left: 20px;
-  background: url(../img/top/icon-04.png) center center/contain;
+  background: url(../img/menu-icon/icon-04.png) center center/contain;
 }
 
 .header__blog {
@@ -231,7 +232,8 @@ button {
   height: 24px;
   top: -30px;
   left: 30px;
-  background: url(../img/top/icon-05.png) center center/contain;
+  background: url(../img/menu-icon/icon-05.png) center center/contain;
+  color: #000;
 }
 
 .header__contact {
@@ -245,7 +247,7 @@ button {
   height: 24px;
   top: -30px;
   left: 20px;
-  background: url(../img/top/icon-07.png) center center/contain;
+  background: url(../img/menu-icon/icon-06.png) center center/contain;
 }
 
 @media (max-width: 767px) {
@@ -273,7 +275,7 @@ button {
   height: 28px;
   top: 10px;
   left: -32px;
-  background: url(../img/top/icon_tel.png) center center/contain;
+  background: url(../img/menu-icon/icon_tel.png) center center/contain;
 }
 
 .header__mb {
@@ -417,22 +419,22 @@ hamburger menu
     /*メニューを画面内へ*/
   }
   .hamburger-menu__lists .hamburger-menu__list-1 a::before {
-    background: url(../img/menu-icon/icon-01.png) center center/contain;
+    background: url(../img/menu-icon/icon-01-w.png) center center/contain;
   }
   .hamburger-menu__lists .hamburger-menu__list-2 a::before {
-    background: url(../img/menu-icon/icon-02.png) center center/contain;
+    background: url(../img/menu-icon/icon-02-w.png) center center/contain;
   }
   .hamburger-menu__lists .hamburger-menu__list-3 a::before {
-    background: url(../img/menu-icon/icon-03.png) center center/contain;
+    background: url(../img/menu-icon/icon-03-w.png) center center/contain;
   }
   .hamburger-menu__lists .hamburger-menu__list-4 a::before {
-    background: url(../img/menu-icon/icon-04.png) center center/contain;
+    background: url(../img/menu-icon/icon-04-w.png) center center/contain;
   }
   .hamburger-menu__lists .hamburger-menu__list-5 a::before {
-    background: url(../img/menu-icon/icon-05.png) center center/contain;
+    background: url(../img/menu-icon/icon-05-w.png) center center/contain;
   }
   .hamburger-menu__lists .hamburger-menu__list-6 a::before {
-    background: url(../img/menu-icon/icon-06.png) center center/contain;
+    background: url(../img/menu-icon/icon-06-w.png) center center/contain;
   }
 }
 
@@ -441,6 +443,7 @@ hamburger menu
 ===========================================================*/
 .web-reserve {
   position: relative;
+  z-index: 10;
 }
 
 .web-reserve__button {
@@ -661,4 +664,83 @@ hamburger menu
 .footer__laser {
   display: inline-block;
   min-width: 84px;
+}
+
+/*===========================================================
+# swiper
+===========================================================*/
+.swiper {
+  margin: 40px 58px 0 62px;
+  height: calc(calc(100vw - 120px)*520/1160);
+  width: calc(100vw - 120px);
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+}
+
+.swiper-slide:nth-child(3n + 1) {
+  background: url(../img/top/top-03.png) center center/cover;
+}
+
+.swiper-slide:nth-child(3n + 2) {
+  background: url(../img/top/top-01.png) center center/cover;
+}
+
+.swiper-slide:nth-child(3n + 3) {
+  background: url(../img/top/top-02.png) center center/cover;
+}
+
+.swiper-slide-dark {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-prev {
+  height: 48px;
+  width: 48px;
+  background: url(../img/menu-icon/arrow-left.png) center center/cover;
+  left: -24px;
+}
+
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-next {
+  height: 48px;
+  width: 48px;
+  background: url(../img/menu-icon/arrow-right.png) center center/cover;
+  right: -24px;
+}
+
+.swiper-text {
+  position: absolute;
+  bottom: 52px;
+  left: 60px;
+  z-index: 1;
+}
+
+/*===========================================================
+  # front-page__mv
+  ===========================================================*/
+.front-page__mv {
+  position: relative;
+}
+
+.mv__time {
+  height: 166px;
+  width: auto;
+  position: absolute;
+  top: 500px;
+  right: 100px;
+  z-index: 1;
 }

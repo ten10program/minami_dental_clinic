@@ -57,7 +57,7 @@
   </div>
   <div class="footer__border-bottom">
     <p class="footer__copyright">
-      Copyright(C) 2020-2021 みなみ歯科クリニック
+    &copy; 2020-2021 みなみ歯科クリニック
     </p>
   </div>
 </footer>
