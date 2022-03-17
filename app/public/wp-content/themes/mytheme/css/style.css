@@ -11,6 +11,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -154,7 +155,7 @@ button {
 
 .header__inner {
   width: 1200px;
-  max-width: 100%;
+  max-width: calc(100% - 80px);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,8 +357,8 @@ hamburger menu
   }
   .hamburger-menu__btn {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -372,6 +373,16 @@ hamburger menu
     z-index: 100;
     opacity: 1;
   }
+}
+
+@media (max-width: 1199px) and (max-width: 767px) {
+  .hamburger-menu__btn {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 1199px) {
   .hamburger-menu__btn span,
   .hamburger-menu__btn span:before,
   .hamburger-menu__btn span:after {

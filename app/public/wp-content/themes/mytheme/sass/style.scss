@@ -37,6 +37,9 @@ html,
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+
+
 }
 
 body {
@@ -175,7 +178,7 @@ button {
 
 .header__inner {
   width: 1200px;
-  max-width: 100%;
+  max-width: calc(100% - 80px);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -345,8 +348,12 @@ hamburger menu
   }
   .hamburger-menu__btn {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 40px;
+      @include mq('sp'){
+          top: 10px;
+          right: 10px;
+    }
     display: flex;
     height: 40px;
     width: 40px;
@@ -373,6 +380,7 @@ hamburger menu
       top: 8px;
     }
   }
+
 
   #hamburger-menu__btn:checked ~ .hamburger-menu__btn span {
     background-color: rgba(
@@ -502,6 +510,7 @@ hamburger menu
   position: fixed;
   top: 176px;
   right: 0;
+  
 
   background: $color-main;
   width: 92px;
