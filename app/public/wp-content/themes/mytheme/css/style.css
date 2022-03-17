@@ -58,12 +58,12 @@ button {
 }
 
 .inner {
-  width: 1000px;
+  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .is-pc {
     display: none;
   }
@@ -186,7 +186,7 @@ button {
   margin-top: 30px;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .header__nav {
     display: none;
   }
@@ -303,7 +303,7 @@ button {
   background: url(../img/menu-icon/icon-06.png) center center/contain;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .header__meta {
     display: none;
   }
@@ -348,7 +348,7 @@ hamburger menu
   display: none;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .hamburger-menu {
     display: block;
     position: relative;
@@ -904,7 +904,7 @@ hamburger menu
   width: 60px;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1199px) {
   .to-top a img {
     width: 40px;
   }
@@ -928,7 +928,7 @@ hamburger menu
 }
 
 .concept__right {
-  width: calc(1000px/ 2);
+  width: calc(1200px/ 2);
   margin: auto auto auto 95px;
 }
 
