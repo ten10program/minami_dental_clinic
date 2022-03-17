@@ -6,6 +6,8 @@
 <?php get_template_part('template-parts/front-page__mv') ?>
 <?php get_template_part('template-parts/front-page__concept') ?>
 <?php get_template_part('template-parts/front-page__recommendation') ?>
+<?php get_template_part('template-parts/front-page__guidance') ?>
+<?php get_template_part('template-parts/front-page__blog') ?>
 <?php get_template_part('template-parts/footer') ?>
 
 

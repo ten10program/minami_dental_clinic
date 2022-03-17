@@ -1,5 +1,5 @@
 <section class="front-page__recommendations inner">
-  <div class="recommendations__title">当院の3つのおすすめ</div>
+  <div class="section__title recommendations__title">当院の3つのおすすめ</div>
   <div class="recommendations__container">
     <div class="recommendation recommendation-01">
       <div class="recommendation__title recommendation-01__title"></div>
